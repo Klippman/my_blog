@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Megaman</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= flash[:notice] if flash[:notice] %>
+    <%= yield %>
+  </body>
+  <footer>
+    <a href="https://www.facebook.com/" target="_blank"><img class="iconPic" src="/images/facebook.png"></a>
+    <a href="https://www.instagram.com/" target="_blank"><img class="iconPic" src="/images/instagram.png"></a>
+    <a href="https://www.linkedin.com/" target="_blank"><img class="iconPic" src="/images/linkedin.png"></a>
+    <a href="https://www.twitter.com" target="_blank"><img class="iconPic" src="/images/twitter.png"></a>
+  </footer>
+</html>

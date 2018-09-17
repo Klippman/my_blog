@@ -1,0 +1,73 @@
+// Home page gif
+
+#gif {
+    background-image: image-url("/images/megaman3.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    background-image:linear-gradient(-90deg,#0F3369, #2E5794, #1B708A, #65ACC2);
+}
+
+li {
+    display: inline-block;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+#links {
+    text-align: center;
+}
+
+// footer css
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.iconPic {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+// Sign-in page (sessions -> new.html.erb)
+
+#parent_sign_in_div {
+    height: 775px;
+    width: 900px;
+    background-color: #E4DFD8;
+    opacity: 0.6;
+    margin: auto;
+    padding: 20px;
+}
+
+#sign_in {
+    text-align: center;
+}
+
+#megaman img {
+    height: 450px;
+    width: 900px;
+}
+
+#login {
+    
+}
+
+p {
+    font-family: Comic Sans MS;
+    font-size: xx-large;
+}
+
+// Posts/index page
+
+#all_posts {
+    display: block-inline;
+}
+
