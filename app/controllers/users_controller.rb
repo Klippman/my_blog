@@ -28,13 +28,18 @@ class UsersController < ApplicationController
     end
 
     def create
-        user = User.create(user_params)
-        flash[:notice] = 'Successfully Created!'
-        redirect_to user 
+        @user = User.create(user_params)
+            if @user.save
+            flash[:notice] = 'Successfully Created!'
+            redirect_to '/sign-in'
+            else
+            flash[:notice] = 'Email Already Exists!'
+            render :new 
+        end
     end
 
     def update
-        user = User.find(params[:id])
+        @user = User.find(params[:id])
         user.update(user_params)
         flash[:notice] = 'Information has been updated!'
         redirect_to user_path
